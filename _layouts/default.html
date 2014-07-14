@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>{{ page.title }}</title>
+        {% if page.description %}
+             <meta name="description" content="{{page.description }}" />
+        {% endif %}
+        <meta name="viewport" content="width=device-width">
+        <!-- syntax highlighting CSS -->
+        <link rel="stylesheet" href="/static/css/syntax.css">
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="/static/css/main.css">
+        <link rel='shortcut icon' href='/static/images/favicon.ico' type='image/x-icon' />
+        <script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+          ga('create', 'UA-43670674-1', 'gexiaofei.com');
+          ga('send', 'pageview');
+
+        </script>
+    </head>
+    <body>
+
+        <div class="container">
+          <div class="site">
+            <div class="header">
+              <h1 class="title"><a href="http://www.gexiaofei.com/"><img src="/static/images/me.png" alt="葛小飞"></a></h1>
+
+            </div>
+
+                {{ content }}
+
+
+            <div class="footer">
+              <div class="footnote">
+                <p>
+                  Powered by <a href="https://github.com/mojombo/jekyll">Jekyll</a>, hosted by <a href="http://pages.github.com/">GitHub</a>, and love to <a href="http://www.sublimetext.com">Sublime Text</a>. - <a href="http://gexiaofei.wufoo.com/forms/contact/">联系我</a>
+                </p>
+              </div>
+
+            </div>
+          </div>
+        </div> <!-- /container -->
+
+    </body>
+</html>

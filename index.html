@@ -1,0 +1,23 @@
+---
+layout: default
+title: 葛小飞
+---
+
+<div id="home">
+{% for post in paginator.posts imit:1 %}
+     	{% if page.link %}
+			<h1 class="post"><a href="{{ post.link }}" class="external">{{ post.title }}</a></h1>
+			{% else %}
+			<h1 class="post"> <a href="{{ post.url }}">{{ post.title }}</a> </h1>
+			<p class="meta">{{ post.date | date:"%Y-%m-%d" }} By   <a href="https://www.gexiaofei.com">葛小飞</a></p>
+			{% endif %}
+
+			<div id="post">
+			{{ post.content }}
+			</div>
+
+			<div id="end">
+			  <h2>#EOF，<a class="extra" href="/archive">查看所有文章</a>。</h2>
+			</div>
+ {% endfor %}
+</div>

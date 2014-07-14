@@ -1,0 +1,17 @@
+---
+layout: default
+---
+{% if page.link %}
+<h1 class="post"><a href="{{ page.link }}" class="external">{{ page.title }}</a></h1>
+{% else %}
+<h1 class="post"> {{ page.title }} </h1>
+<p class="meta">{{ page.date | date:"%Y-%m-%d" }} By   <a href="https://www.gexiaofei.com">葛小飞</a></p>
+{% endif %}
+
+<div id="post">
+{{ content }}
+</div>
+
+<div id="end">
+  <h2>#EOF，<a class="extra" href="/archive">查看所有文章</a>。</h2>
+</div>
